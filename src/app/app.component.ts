@@ -36,14 +36,14 @@ export class MyApp {
       this.nav.setRoot('ScreenSaverPage');
     } else { //วันจันทร์ - ศุกร์
       let H = date.getHours();
-      if (H >= 6 && H <= 9) {
+      if (H >= 6 && H < 9) {
         this.keepAwake();
         if (isActivePage.scanner) {
           console.log('aleady ScannerPage');
         } else {
           this.nav.setRoot('ScannerPage');
         }
-      } else if (H >= 14 && H <= 16) {
+      } else if (H >= 14 && H < 16) {
         this.keepAwake();
         if (isActivePage.scanner) {
           console.log('aleady ScannerPage');
