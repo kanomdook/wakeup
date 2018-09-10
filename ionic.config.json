@@ -1,5 +1,7 @@
 {
   "name": "wakeup",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
