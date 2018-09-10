@@ -33,11 +33,7 @@ export class MyApp {
     isActivePage = isActivePage ? isActivePage : { scanner: true, screenSaver: false };
     if (day === 0 || day === 6) { //วันเสาร์ - อาทิตย์
       this.allowSleepAgain();
-      if (isActivePage.screenSaver) {
-        console.log('aleady ScreenSaverPage');
-      } else {
-        this.nav.setRoot('ScreenSaverPage');
-      }
+      this.nav.setRoot('ScreenSaverPage');
     } else { //วันจันทร์ - ศุกร์
       let H = date.getHours();
       if (H >= 6 && H <= 9) {
